@@ -1,10 +1,9 @@
 A = int(input("Введите целое число A: "))
 B = int(input("Введите целое число B (B > A): "))
 
-# Проверяем, что A < B
 if A < B:
     count = 0
-    for i in range(B-1, A, -1):  # Числа от B-1 до A+1 (не включая A и B)
+    for i in range(B-1, A, -1):  
         print(i)
         count += 1
     print(f"Количество чисел: {count}")
