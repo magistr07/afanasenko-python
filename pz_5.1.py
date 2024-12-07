@@ -1,3 +1,10 @@
+'''
+2 варик
+Составить функцию, которая напечатает сорок любых символов
+'''
+
+
+
 import random
 
 def print_forty_random_characters():
