@@ -6,13 +6,13 @@
 
 def has_odd_digit(N):
     while N > 0:
-        digit = N % 10  # Получаем последнюю цифру
-        if digit % 2 != 0:  # Проверяем, нечетная ли цифра
+        digit = N % 10  
+        if digit % 2 != 0:  
             return True
-        N //= 10  # Убираем последнюю цифру
+        N //= 10  
     return False
 
-# Пример использования
+
 N = int(input("Введите целое число N (>0): "))
 if has_odd_digit(N):
     print("TRUE")
