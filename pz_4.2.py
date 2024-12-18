@@ -4,14 +4,16 @@
 расположенные между A и B (не включая числа A и B), а также количество N этих чисел.
 '''
 
-A = int(input("Введите целое число A: "))
-B = int(input("Введите целое число B (B > A): "))
+A = int(input("Введите число A (A < B): "))
+B = int(input("Введите число B (A < B): "))
 
-if A < B:
-    count = 0
-    for i in range(B-1, A, -1):  
-        print(i)
-        count += 1
-    print(f"Количество чисел: {count}")
+if A >= B:
+    print("Ошибка: A должно быть меньше B.")
 else:
-    print("Убедитесь, что A < B!")
+    numbers = list(range(A + 1, B))
+    
+    for number in reversed(numbers):
+        print(number)
+
+    N = len(numbers)
+    print("Количество чисел между A и B:", N)
